@@ -24,14 +24,15 @@ def PlayGame():
         else:
             print("請輸入提示範圍內的數字")
     print(f"您猜了{count}次")
-def main():             #創建main function記憶體區塊,main    
-    while(True):
-        tools.PlayGame()
-        PlayAgain = input("您還要繼續嗎(y,n)?")
-        if PlayAgain == 'n':
-            break
+
+
+class Student():
+    def __init__(self,name:str,chinese:int,english:int,math:int):  #自訂的初始化 #self代表我自己這個實體。看到參數是self，引數值可以省略 
+        self.name=name
+        self.chinese=chinese
+        self.english=english
+        self.math=math
+
+    def sum(self)->int:   #實體方法 只有學生這個實體可以執行
+        return self.chinese + self.english + self.math
     
-    print("遊戲結束")
-    
-if __name__=="__main__":
-    main() #執行main function呼叫
