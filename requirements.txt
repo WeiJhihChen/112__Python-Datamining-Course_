@@ -1,0 +1,4 @@
+#把這裡當一個資料庫，以後只要install這個資料庫即可
+#終端機輸入：pip install -r requirements.txt
+pyInputPlus
+requests
