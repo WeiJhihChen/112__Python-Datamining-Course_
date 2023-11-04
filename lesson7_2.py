@@ -1,5 +1,5 @@
 import random
-def main(): #創建main function記憶體區塊,main
+def PlayGame():
     min = 1
     max = 100
     count = 0
@@ -24,6 +24,14 @@ def main(): #創建main function記憶體區塊,main
         else:
             print("請輸入提示範圍內的數字")
     print(f"您猜了{count}次")
+def main():             #創建main function記憶體區塊,main    
+    while(True):
+        PlayGame()
+        PlayAgain = input("您還要繼續嗎(y,n)?")
+        if PlayAgain == 'n':
+            break
+    
     print("遊戲結束")
-if___name___=="__main__":
+    
+if __name__=="__main__":
     main() #執行main function呼叫
