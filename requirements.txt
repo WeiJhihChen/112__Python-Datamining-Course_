@@ -2,4 +2,5 @@
 #終端機輸入：pip install -r requirements.txt
 pyInputPlus
 requests
+pandas
 fake-useragent
