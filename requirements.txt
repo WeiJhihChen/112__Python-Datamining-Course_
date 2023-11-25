@@ -2,8 +2,9 @@
 #終端機輸入：pip install -r requirements.txt
 pyInputPlus
 requests
-pandas
+pandas #其實pandas附屬套件就包含numpy，不需要再灌numpy
 fake-useragent
 openpyxl
 SQLAlchemy
 psycopg2
+numpy
